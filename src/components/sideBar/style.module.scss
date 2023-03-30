@@ -1,11 +1,5 @@
 @use "../../sass/colors" as c;
 
-.container {
-    position: fixed;
-    left: 0;
-    background-color: c.$color_bg_header;
-}
-
 .container_logo {
     display: flex;
     justify-content: center;
@@ -16,4 +10,11 @@
 .img {
     height: 32px;
     width: 32px;
+}
+
+.menu {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

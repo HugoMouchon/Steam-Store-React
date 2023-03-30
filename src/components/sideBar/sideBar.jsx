@@ -13,12 +13,12 @@ import style from './style.module.scss';
 
 export default function SideBar() {
 
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     return (
         <>
             <Sider
-                style={{ backgroundColor: "#1B2248" }}
+                style={{ backgroundColor: "#1B2248", position: "fixed", height: "100vh" }}
                 trigger={null}
                 collapsible collapsed={collapsed}
             >
@@ -29,37 +29,47 @@ export default function SideBar() {
                         alt="Logo de l'entreprise Steam, vendeur numérique de jeux vidéo"
                     />
                 </div>
-                
 
-                <Menu
-                    style={{ backgroundColor: "#1B2248", color: "#ECEFF4" }}
-                    mode="inline"
-                    defaultSelectedKeys={['1']}
-                    items={[
-                        {
-                            key: '1',
-                            icon: <UserOutlined />,
-                            label: 'nav 1',
-                        },
-                        {
-                            key: '2',
-                            icon: <VideoCameraOutlined />,
-                            label: 'nav 2',
-                        },
-                        {
-                            key: '3',
-                            icon: <UploadOutlined />,
-                            label: 'nav 3',
-                        },
-                        {
-                            key: '4',
-                            icon: <RightCircleOutlined />,
-                            label: 'nav 4',
-                            onClick: () => setCollapsed(!collapsed),
-                        },
-                    ]}
-                />
-
+                <div className={style.menu}>
+                    <div>
+                        <Menu
+                            style={{ backgroundColor: "#1B2248", color: "#ECEFF4" }}
+                            mode="inline"
+                            defaultSelectedKeys={['1']}
+                            items={[
+                                {
+                                    key: '1',
+                                    icon: <UserOutlined />,
+                                    label: 'nav 1',
+                                },
+                                {
+                                    key: '2',
+                                    icon: <VideoCameraOutlined />,
+                                    label: 'nav 2',
+                                },
+                                {
+                                    key: '3',
+                                    icon: <UploadOutlined />,
+                                    label: 'nav 3',
+                                },
+                            ]}
+                        />
+                    </div>
+                    <div>
+                        <Menu
+                            style={{ backgroundColor: "#1B2248", color: "#EC544E" }}
+                            mode="inline"
+                            items={[
+                                {
+                                    key: '4',
+                                    icon: <RightCircleOutlined />,
+                                    label: 'nav 4',
+                                    onClick: () => setCollapsed(!collapsed),
+                                },
+                            ]}
+                        />
+                    </div>
+                </div>
             </Sider>
         </>
     );

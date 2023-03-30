@@ -6,15 +6,13 @@ import Header from 'components/header/header';
 
 const { Content } = Layout;
 
-function App () {
+function App() {
   return (
     <Layout className={style.container}>
-      <SideBar />
+      <Header />
       <Layout className="site-layout">
-        <Header/>
-        <Content
-          className={style.container_content}
-        >
+        <SideBar />
+        <Content className={style.container_content}>
           <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
