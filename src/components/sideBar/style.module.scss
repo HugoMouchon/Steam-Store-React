@@ -1,0 +1,19 @@
+@use "../../sass/colors" as c;
+
+.container {
+    position: fixed;
+    left: 0;
+    background-color: c.$color_bg_header;
+}
+
+.container_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+}
+
+.img {
+    height: 32px;
+    width: 32px;
+}

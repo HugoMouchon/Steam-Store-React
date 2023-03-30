@@ -1,11 +1,62 @@
-import './App.module.scss';
+import style from 'App.module.scss';
+import React from 'react';
+import { Layout } from 'antd';
+import SideBar from 'components/sideBar/sideBar';
+import Header from 'components/header/header';
 
-function App() {
+const { Content } = Layout;
+
+function App () {
   return (
-    <div>
-      Coucou
-    </div>
+    <Layout className={style.container}>
+      <SideBar />
+      <Layout className="site-layout">
+        <Header/>
+        <Content
+          className={style.container_content}
+        >
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus officia alias. Libero quo odit ratione omnis explicabo, perspiciatis delectus repudiandae at assumenda. Facilis, ullam? Maiores fugit quo asperiores? Debitis.
+          </div>
+
+        </Content>
+      </Layout>
+    </Layout>
   );
-}
+};
 
 export default App;

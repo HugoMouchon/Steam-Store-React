@@ -1,0 +1,13 @@
+@use "../../sass/colors" as c;
+
+.header {
+    height: 65px;
+    width: 100vw;
+    position: fixed;
+    background-color: c.$color_bg_header;
+    padding: 0;
+}
+
+.menu {
+    background-color: c.$color_bg_header;
+}

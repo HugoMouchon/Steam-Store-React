@@ -1,0 +1,17 @@
+@use "./sass/colors" as c;
+
+.container {
+    height: 100%;
+}
+
+.container_content {
+    margin: 24px 16px;
+    padding: 24px;
+    background-color: #fff;
+    
+}
+
+.logo {
+    width: 35px;
+}
+
