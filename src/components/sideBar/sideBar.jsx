@@ -30,6 +30,7 @@ export default function SideBar({ collapsed, setCollapsed }) {
                     <div>
                         <Menu
                             style={{ backgroundColor: "#1B2248", color: "#ECEFF4" }}
+                            className={style.item}
                             mode="inline"
                             defaultSelectedKeys={['1']}
                             items={[

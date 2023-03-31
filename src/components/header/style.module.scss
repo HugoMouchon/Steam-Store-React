@@ -7,10 +7,25 @@
     height: 65px;
     width: 100vw;
     padding-left: 100px;
+    padding-right: 80px;
     position: fixed;
     background-color: c.$color_bg_header;
 }
 
-.menu {
-    background-color: c.$color_bg_header;
+.icone {
+    font-size: 22px;
+    padding-left: 20px;
+    color: c.$color_icone;
+
+    &:hover {
+        color: #7BC0EF;
+    }
+}
+
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
 }

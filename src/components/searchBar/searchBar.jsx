@@ -1,19 +1,47 @@
 import style from './style.module.scss';
-import { Input } from 'antd';
+import React, { useState } from "react";
+import { SearchOutlined } from '@ant-design/icons';
 
-const { Search } = Input;
+function SearchBar({ onSearch }) {
 
-export default function SearchBar() {
+    const [searchText, setSearchText] = useState("");
 
-    const onSearch = (value) => console.log(value);
+    function handleChange(event) {
+        setSearchText(event.target.value);
+    }
+
+    function handleKeyPress(event) {
+        if (event.key === "Enter") {
+            onSearch(searchText);
+        }
+    }
+
+    function handleButtonClick() {
+        onSearch(searchText);
+    }
 
     return (
         <div>
-            <Search
-                className={style.searchBar}
-                placeholder="Rechercher un jeu"
-                onSearch={onSearch}
-                enterButton />
+            <input
+                className={style.input}
+                type="text"
+                value={searchText}
+                onChange={handleChange}
+                onKeyPress={handleKeyPress}
+                placeholder="Cyberpunk 2077, Hades, Ori..."
+            />
+            <button
+                className={style.btn}
+                onClick={handleButtonClick}>
+                <SearchOutlined
+                    style={{
+                        fontSize: 13,
+                    }}
+                />
+            </button>
         </div>
-    )
+    );
 }
+
+export default SearchBar;
+
