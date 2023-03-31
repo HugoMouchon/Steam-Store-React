@@ -1,8 +1,12 @@
 @use "../../sass/colors" as c;
 
 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 65px;
     width: 100vw;
+    padding-left: 100px;
     position: fixed;
     background-color: c.$color_bg_header;
 }

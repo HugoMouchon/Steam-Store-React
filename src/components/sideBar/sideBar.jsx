@@ -1,5 +1,3 @@
-
-import React, { useState } from 'react';
 import {
     RightCircleOutlined,
     UploadOutlined,
@@ -11,9 +9,7 @@ import Sider from 'antd/es/layout/Sider';
 import logo from '../../assets/logo/steam.svg';
 import style from './style.module.scss';
 
-export default function SideBar() {
-
-    const [collapsed, setCollapsed] = useState(true);
+export default function SideBar({ collapsed, setCollapsed }) {
 
     return (
         <>
@@ -57,7 +53,7 @@ export default function SideBar() {
                     </div>
                     <div>
                         <Menu
-                            style={{ backgroundColor: "#1B2248", color: "#EC544E" }}
+                            style={{ backgroundColor: "#1B2248", color: "#EC544E"}}
                             mode="inline"
                             items={[
                                 {
