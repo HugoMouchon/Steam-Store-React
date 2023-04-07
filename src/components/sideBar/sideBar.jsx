@@ -14,7 +14,7 @@ export default function SideBar({ collapsed, setCollapsed }) {
     return (
         <>
             <Sider
-                style={{ backgroundColor: "#1B2248", position: "fixed", height: "100vh" }}
+                style={{ backgroundColor: "#181d3a", position: "fixed", height: "100vh" }}
                 trigger={null}
                 collapsible collapsed={collapsed}
             >
@@ -29,7 +29,7 @@ export default function SideBar({ collapsed, setCollapsed }) {
                 <div className={style.menu}>
                     <div>
                         <Menu
-                            style={{ backgroundColor: "#1B2248", color: "#ECEFF4" }}
+                            style={{ backgroundColor: "#181d3a", color: "#ECEFF4" }}
                             className={style.item}
                             mode="inline"
                             defaultSelectedKeys={['1']}
