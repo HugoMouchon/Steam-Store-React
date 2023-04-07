@@ -2,6 +2,7 @@ import style from "./style.module.scss";
 import { Carousel } from 'antd';
 import { HeartOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
+import { RatedStars } from "components/ratedStars/ratedStars";
 
 export function CarouselHeader({ gamesTopRated, gameDetails, beforeChange }) {
     return (
@@ -15,11 +16,12 @@ export function CarouselHeader({ gamesTopRated, gameDetails, beforeChange }) {
                         <div className={style.content}>
                             <div className={style.title}>
                                 <h2>{game.name}</h2>
+                                <RatedStars rating={game.rating} />
                                 <span>{game.rating}/5</span>
                             </div>
                             <p className={style.description}>{gameDetails}</p>
 
-                            <Button type="default" icon={<HeartOutlined />} size={"medium"} style={{backgroundColor: "transparent", color: "#fff", marginTop: "15px"}}>
+                            <Button className={style.favoriteButton} type="default" icon={<HeartOutlined className={style.hearth} />} size={"medium"} style={{ marginTop: "15px" }} >
                                 Ajouter Favoris
                             </Button>
                         </div>

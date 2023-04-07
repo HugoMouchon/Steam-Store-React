@@ -1,8 +1,17 @@
 @use "../../sass/colors" as c;
+@font-face {
+    font-family: "San Francisco Bold";
+    src: url("../../font/SF-Pro-Display-Bold.ttf");
+
+    font-family: "San Francisco Medium";
+    src: url("../../font/SF-Pro-Display-Medium.ttf");
+
+    font-family: "San Francisco Regular";
+    src: url("../../font/SF-Pro-Display-Regular.ttf");
+}
 
 .container {
     position: relative;
-
 }
 
 .img {
@@ -10,8 +19,6 @@
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
-    
-
 }
 
 .content {
@@ -20,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 70%;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 85px;
     box-sizing: border-box;
     border-bottom-left-radius: 30px;
@@ -28,15 +35,34 @@
     background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.781) 50%);
     color: c.$color_text;
 
+    h2 {
+        font-family: "San Francisco Bold";
+        font-size: 30px;
+        margin: 0;
+    }
 }
 
 .title {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .description {
     padding-right: 20rem;
+    font-family: "San Francisco Regular";
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
+.hearth {
+    color: #4562F0;
+}
+
+.favoriteButton {
+    &:hover {
+        .hearth {
+            color: red;
+        }
+    }
+}

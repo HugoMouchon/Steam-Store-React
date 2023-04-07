@@ -60,16 +60,13 @@ function App() {
       >
         <div>
           <div className={style.container_carousel}>
-            <h1>Jeux populaires en 2022</h1>
+            <h1>Meilleur jeux de 2022</h1>
             <CarouselHeader gamesTopRated={gamesTopRated} gameDetails={gameDetails} beforeChange={handleBeforeChange} />
           </div>
         </div>
 
         <div>
-          <div className={style.container_carousel}>
-            <h1>Jeux populaires en 2022</h1>
-            <CarouselHeader gamesTopRated={gamesTopRated} />
-          </div>
+
         </div>
 
       </Content>

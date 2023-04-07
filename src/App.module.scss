@@ -1,7 +1,15 @@
 @use "./sass/colors" as c;
+@font-face {
+    font-family: "San Francisco bold";
+    src: url("./font/SF-Pro-Display-Bold.ttf");
+}
 
 .container {
     height: 100%;
+    
+    h1 {
+        font-family: "San Francisco bold";
+    }
 }
 
 .container_content {

@@ -1,0 +1,8 @@
+@use "../../sass/colors" as c;
+
+
+.star {
+    padding-right: 8px;
+    font-size: 27px;
+    color: c.$color_star;
+}
