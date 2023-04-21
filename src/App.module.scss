@@ -1,28 +1,21 @@
 @use "./sass/colors" as c;
-@font-face {
-    font-family: "San Francisco bold";
-    src: url("./font/SF-Pro-Display-Bold.ttf");
-}
 
 .container {
     height: 100%;
-    
-    h1 {
-        font-family: "San Francisco bold";
-    }
 }
 
-.container_content {
+.container__content {
     padding: 90px 30px 0 110px;
     background-color: c.$color_bg_content;
     color: c.$color_text;
 }
 
-.logo {
-    width: 35px;
-}
-
-
-.container_carousel {
+.container__carousel {
     margin-bottom: 80px;
+  
 }
+
+h1 {
+    font-family: "San Francisco Bold", sans-serif;
+}
+

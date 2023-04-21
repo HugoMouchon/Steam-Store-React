@@ -1,5 +1,9 @@
 @use "../../sass/colors" as c;
 
+.container {
+    z-index: 1;
+}
+
 .container_logo {
     display: flex;
     justify-content: center;

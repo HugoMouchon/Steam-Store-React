@@ -4,9 +4,9 @@ import { HeartOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { RatedStars } from "components/ratedStars/ratedStars";
 
-export function CarouselHeader({ gamesTopRated, gameDetails, beforeChange }) {
+export function TopGames({ gamesTopRated, gameDetails, beforeChange }) {
     return (
-        <Carousel autoplay beforeChange={beforeChange}>
+        <Carousel autoplay autoplaySpeed={5000} beforeChange={beforeChange}>
             {gamesTopRated.map(game => (
                 <div className={style.container}>
                     <li key={game.id} className={style.slide}>
@@ -32,4 +32,4 @@ export function CarouselHeader({ gamesTopRated, gameDetails, beforeChange }) {
     );
 }
 
-export default CarouselHeader;
+export default TopGames;

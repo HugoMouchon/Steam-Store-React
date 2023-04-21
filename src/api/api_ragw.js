@@ -12,5 +12,10 @@ export class rawgAPI {
     static async fetchGameDetails(gameId) {
         const response = await axios.get(`${BASE_URL}games/${gameId}${API_KEY}`);
         return response.data;
-      }
+    };
+
+    static async fetchPopularsGames() {
+        const response = await axios.get(`${BASE_URL}games${API_KEY}&ordering=-metacritic>100&page_size=20`);
+        return response.data.results;
+    };
 }

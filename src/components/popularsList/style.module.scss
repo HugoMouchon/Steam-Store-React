@@ -1,0 +1,14 @@
+.liste {
+    display: flex;
+    width: 100vw -25;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+
+    &:hover {
+        overflow-x: overlay;
+    }
+}
+
+.liste_item {
+    margin-right: 20px;
+}

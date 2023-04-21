@@ -12,7 +12,7 @@ import style from './style.module.scss';
 export default function SideBar({ collapsed, setCollapsed }) {
 
     return (
-        <>
+        <div className={style.container}>
             <Sider
                 style={{ backgroundColor: "#181d3a", position: "fixed", height: "100vh" }}
                 trigger={null}
@@ -68,6 +68,6 @@ export default function SideBar({ collapsed, setCollapsed }) {
                     </div>
                 </div>
             </Sider>
-        </>
+        </div>
     );
 }

@@ -1,14 +1,4 @@
 @use "../../sass/colors" as c;
-@font-face {
-    font-family: "San Francisco Bold";
-    src: url("../../font/SF-Pro-Display-Bold.ttf");
-
-    font-family: "San Francisco Medium";
-    src: url("../../font/SF-Pro-Display-Medium.ttf");
-
-    font-family: "San Francisco Regular";
-    src: url("../../font/SF-Pro-Display-Regular.ttf");
-}
 
 .container {
     position: relative;
@@ -36,8 +26,8 @@
     color: c.$color_text;
 
     h2 {
-        font-family: "San Francisco Bold";
-        font-size: 30px;
+        font-family: "San Francisco Bold", sans-serif;
+        font-size: 35px;
         margin: 0;
     }
 }
@@ -49,20 +39,29 @@
 }
 
 .description {
-    padding-right: 20rem;
-    font-family: "San Francisco Regular";
-    font-size: 17px;
+    padding-right: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: none;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 
 .hearth {
-    color: #4562F0;
+    color: c.$color_hearth;
 }
 
 .favoriteButton {
+    background-color: c.$color_bg_button;
+    color: c.$color_text_button;
+    border: none;
+    font-weight: 500;
+
     &:hover {
+        background-color: c.$color_bg_hover_button;
+        color: c.$color_text_hover_button !important;
+
         .hearth {
-            color: red;
+            color: c.$color_hover_hearth;
         }
     }
 }

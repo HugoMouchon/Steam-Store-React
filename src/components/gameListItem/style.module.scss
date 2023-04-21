@@ -1,0 +1,25 @@
+@use "../../sass/colors" as c;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: c.$color_bg_header;
+    overflow: hidden;
+}
+.container__image {
+    height: 80%;
+}
+
+.image {
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.titre {
+    padding: 10px;
+}
