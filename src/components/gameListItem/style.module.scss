@@ -3,15 +3,16 @@
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 250px;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     background-color: c.$color_bg_header;
     overflow: hidden;
 }
 .container__image {
-    height: 80%;
+    display: flex;
+    justify-content: center;
+    height: 60%;
 }
 
 .image {
@@ -22,4 +23,20 @@
 
 .titre {
     padding: 10px;
+}
+
+.container__starsAndEditors {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    padding: 10px;
+
+
+}
+
+span {
+    justify-content: center;
 }
