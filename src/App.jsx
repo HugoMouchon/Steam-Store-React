@@ -80,7 +80,7 @@ function App() {
           <h1>Jeux populaires</h1>
           <PopularsList popularsGames={popularsGames}/>
         </div>
-
+        
       </Content>
     </Layout>
   );

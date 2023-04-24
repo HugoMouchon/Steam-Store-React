@@ -1,0 +1,13 @@
+@use "../../sass/colors" as c;
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: c.$color_bg_button_add;
+    border: none;
+    border-radius: 6px;
+}
+
+.icone {
+    font-size: 20px;
+}

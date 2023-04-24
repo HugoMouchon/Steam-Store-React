@@ -4,7 +4,7 @@ import apple from "../../assets/logo-editeurs/apple.svg";
 import ios from "../../assets/logo-editeurs/ios.svg";
 import linux from "../../assets/logo-editeurs/linux.svg";
 import nintendo from "../../assets/logo-editeurs/nintendo.svg";
-import playstation from "../../assets/logo-editeurs/playstationPNG.png";
+import playstation from "../../assets/logo-editeurs/playstation.svg";
 import windows from "../../assets/logo-editeurs/windows.svg";
 import xbox from "../../assets/logo-editeurs/xbox.svg";
 
@@ -45,7 +45,7 @@ export default function Editors({ games }) {
                     <img
                         src={editorLogo}
                         alt=""
-                        className={style.logoEditor}
+                        className={style.img}
                     />
                 );
             })}

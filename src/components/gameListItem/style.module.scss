@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
     background-color: c.$color_bg_header;
     overflow: hidden;
+    padding: 0px 20px 20px 20px;
 }
 .container__image {
     display: flex;
@@ -22,21 +23,40 @@
 }
 
 .titre {
-    padding: 10px;
+    padding: 20px 0px 20px 0px;
+}
+
+h3 {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container__starsAndEditors {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    gap: 5px;
 }
 
 .stars {
     display: flex;
-    padding: 10px;
-
-
 }
 
 span {
     justify-content: center;
+}
+
+.container__button {
+    display: flex;
+    gap: 16px;
+}
+
+.favoriteButton {
+    flex-grow: 1;
+}
+
+.addButton {
+    flex-grow: 3;
 }
