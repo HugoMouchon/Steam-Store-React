@@ -9,7 +9,14 @@
     background-color: c.$color_bg_header;
     overflow: hidden;
     padding: 0px 20px 20px 20px;
+    transition: transform 250ms;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 7px 10px c.$color_hover_card;
+    }
 }
+
 .container__image {
     display: flex;
     justify-content: center;

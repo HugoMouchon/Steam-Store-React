@@ -1,3 +1,5 @@
+@use "../../sass/colors" as c;
+
 .liste {
     display: flex;
     width: 100vw -25;
@@ -6,6 +8,29 @@
 
     &:hover {
         overflow-x: overlay;
+    }
+
+    /* Style pour la barre de défilement */
+
+    &::-webkit-scrollbar {
+        height: 9px;
+        /* largeur de la barre de défilement */
+    }
+
+    /* Style pour le fond de la barre de défilement */
+    &::-webkit-scrollbar-track {
+        background: c.$color_bg_scrollbar;
+    }
+
+    /* Style pour le curseur de la barre de défilement */
+    &::-webkit-scrollbar-thumb {
+        background: c.$color_color_scrollbar;
+        border-radius: 50px;
+    }
+
+    /* Style pour le curseur de la barre de défilement au survol */
+    &::-webkit-scrollbar-thumb:hover {
+        background: c.$color_color_hover_scrollbar;
     }
 }
 

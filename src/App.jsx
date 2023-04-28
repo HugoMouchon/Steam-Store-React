@@ -80,7 +80,9 @@ function App() {
           <h1>Jeux populaires</h1>
           <PopularsList popularsGames={popularsGames}/>
         </div>
-        
+        <div className={style.container__novelty}>
+
+        </div>
       </Content>
     </Layout>
   );
