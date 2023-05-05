@@ -1,3 +1,4 @@
+
 import {
     RightCircleOutlined,
     UploadOutlined,
@@ -8,9 +9,9 @@ import { Menu } from 'antd';
 import Sider from 'antd/es/layout/Sider';
 import logo from '../../assets/logo/steam.svg';
 import style from './style.module.scss';
+import { Link } from 'react-router-dom';
 
 export default function SideBar({ collapsed, setCollapsed }) {
-
     return (
         <div className={style.container}>
             <Sider
@@ -18,13 +19,17 @@ export default function SideBar({ collapsed, setCollapsed }) {
                 trigger={null}
                 collapsible collapsed={collapsed}
             >
+
                 <div className={style.container_logo}>
-                    <img
-                        className={style.img}
-                        src={logo}
-                        alt="Logo de l'entreprise Steam, vendeur numérique de jeux vidéo"
-                    />
+                    <Link to="/">
+                        <img
+                            className={style.img}
+                            src={logo}
+                            alt="Logo de l'entreprise Steam, vendeur numérique de jeux vidéo"
+                        />
+                    </Link>
                 </div>
+
 
                 <div className={style.menu}>
                     <div>
@@ -54,7 +59,7 @@ export default function SideBar({ collapsed, setCollapsed }) {
                     </div>
                     <div>
                         <Menu
-                            style={{ backgroundColor: "#1B2248", color: "#EC544E"}}
+                            style={{ backgroundColor: "#1B2248", color: "#EC544E" }}
                             mode="inline"
                             items={[
                                 {
