@@ -20,8 +20,47 @@ h1 {
 }
 
 .container__novelty {
+    display: flex;
     height: 450px;
     border-radius: 30px;
     margin-top: 40px;
     background-color: red;
+    background-image: url("./assets/bg__mario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.filtreBg{
+    display: flex;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.781) 50%);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+    width: 50%;
+    
+    h3 {
+        font-family: "San Francisco Bold" sans-serif;
+        font-size: 25px;
+        padding-top: 150px;
+    }
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    width: 50%;
+
+    .image {
+        width: 30%;
+        box-shadow: 10px 0px 15px rgb(0, 0, 0);
+    }
 }
